@@ -15,16 +15,19 @@
 
 
 
-<meta name="description" content="记录code点点滴滴">
+<meta name="description" content="Spring学习之路（一）spring官网：http://www.spring.iospring项目初始化：https://start.spring.io ##Spring概述  Spring框架是一个轻量级的企业级开发的一站式解决方案。Spring框架主要提供了IoC容器、AOP、数据访问、Web开发、消息、测试等相关技术的支持。Spring使用简单的POJO（无限制的普通Java对象）进行企业">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Snails">
-<meta property="og:url" content="https://pbxiaoliang.github.io/archives/2017/index.html">
+<meta property="og:url" content="https://pbxiaoliang.github.io/java/Spring学习之路（一）.html">
 <meta property="og:site_name" content="Snails">
-<meta property="og:description" content="记录code点点滴滴">
+<meta property="og:description" content="Spring学习之路（一）spring官网：http://www.spring.iospring项目初始化：https://start.spring.io ##Spring概述  Spring框架是一个轻量级的企业级开发的一站式解决方案。Spring框架主要提供了IoC容器、AOP、数据访问、Web开发、消息、测试等相关技术的支持。Spring使用简单的POJO（无限制的普通Java对象）进行企业">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://pbxiaoliang.github.io/java/Spring.png">
+<meta property="og:updated_time" content="2017-12-16T13:56:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Snails">
-<meta name="twitter:description" content="记录code点点滴滴">
+<meta name="twitter:description" content="Spring学习之路（一）spring官网：http://www.spring.iospring项目初始化：https://start.spring.io ##Spring概述  Spring框架是一个轻量级的企业级开发的一站式解决方案。Spring框架主要提供了IoC容器、AOP、数据访问、Web开发、消息、测试等相关技术的支持。Spring使用简单的POJO（无限制的普通Java对象）进行企业">
+<meta name="twitter:image" content="https://pbxiaoliang.github.io/java/Spring.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -56,7 +59,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives: 2017 | Snails</title>
+<title>Snails</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -67,7 +70,7 @@
         animate: true,
         isHome: false,
         isPost: false,
-        isArchive: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -253,139 +256,119 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
   
+    <div class="article-meta">
+      <a href="/java/Spring学习之路（一）.html" class="article-date">
+      <time datetime="2017-12-16T13:57:06.151Z" itemprop="datePublished">2017-12-16</time>
+</a>
+
+
+    </div>
   
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
+    <div class="article-entry" itemprop="articleBody">
       
+          
+              <style>
+    .article-meta { display: none; }
+    #container .article .article-title { padding-right: 0; }
+    .article-header {
+        padding: 0;
+        padding-top: 26px;
+        border-left: none;
+        text-align: center;
+    }
+    .article-header:hover { border-left: none; }
+    .article-title { font-size: 1.6em }
+    .article-entry hr { margin: 0;}
+    .article-meta,
+    #container .article-info-post.article-info { display: none;}
+    #container .article .article-title { padding: 0; }
+</style>
+
+
+          
+        <h1 id="Spring学习之路（一）"><a href="#Spring学习之路（一）" class="headerlink" title="Spring学习之路（一）"></a>Spring学习之路（一）</h1><p><strong>spring官网</strong>：<a href="http://www.spring.io" target="_blank" rel="noopener">http://www.spring.io</a><br><strong>spring项目初始化</strong>：<a href="https://start.spring.io" target="_blank" rel="noopener">https://start.spring.io</a></p>
+<p>##Spring概述</p>
+<blockquote>
+<p>Spring框架是一个轻量级的企业级开发的一站式解决方案。Spring框架主要提供了IoC容器、AOP、数据访问、Web开发、消息、测试等相关技术的支持。<br>Spring使用简单的POJO（无限制的普通Java对象）进行企业级开发。每一个被Spring管理的Java对象都称之为Bean;而Spring提供了一个IoC容器用来初始化对象，解决对象之间的依赖管理和对象的使用。</p>
+<p>###1.spring模块<br>Spring是模块化的，这意味着我们可以只使用需要的Spring模块。<br><img src="./Spring.png" alt="Alt text"><br>Spring主要包括五大模块：<strong>Core Container </strong>核心容器、 <strong>AOP</strong> 、 <strong>Web </strong>、 <strong>Data Access/Integration </strong>数据访问/集成<br>详细介绍可参考<a href="https://www.cnblogs.com/whtydn/p/5128103.html" target="_blank" rel="noopener">https://www.cnblogs.com/whtydn/p/5128103.html</a> </p>
+<p>###2.spring的生态<br>Spring目前提供了大量的基于Spring的项目，可以用来更深入地降低开发难度，提高开发效率。<br>常用spring项目介绍如下表：<br>| 项目    |介绍 |<br>| :——– | :——–|<br>|Spring Boot|使用默认开发配置来实现快速开发|<br>|Spring XD|用来简化大数据应用开发|<br>|Spring Cloud|为分布式系统开发提供工具集|<br>|Spring Integration|通过消息机制对企业集成模式EIP的支持|<br>|Spring Batch|简化及优化大量数据的批处理操作|<br>|Spring Social|社交网络API的集成|<br>|Spring Web Flow|基于SpringMVC提供基于向导流程式的Web应用开发|<br>|Spring Session|提供一个API及试下来管理用户会话信息|</p>
+<p>###3.spring的优缺点<br>Spring有哪些优点？</p>
+<ul>
+<li>Spring是轻量级和低侵入式开发，代码污染极低；</li>
+<li>使用Spring的IOC容器，将对象之间的依赖关系交给Spring，降低组件之间的耦合性，让我们更专注于应用逻辑；</li>
+<li>Spring使用通过AOP和默认习惯进行声明式编程；</li>
+<li>使用AOP和模板（template）减少模式化代码。（以上四个为主要优点）</li>
+<li>易于本地测试（Junit单元测试，不用部署服务器）；</li>
+<li>对主流的框架提供了很好的集成支持，如Hibernate,Struts2,JPA等；</li>
+<li>Spring DI机制降低了业务对象替换的复杂性；</li>
+<li>可以提供众多服务，事务管理，WS等。</li>
+<li>Spring的高度可开放性，并不强制依赖于Spring，开发者可以自由选择Spring部分或全部</li>
+</ul>
+</blockquote>
+<p>Spring有哪些缺点？</p>
+<ul>
+<li>降低了系统的性能。这是不言而喻的。如果不采用分层式结构,很多业务可以直接造访数据库,以此获取相应的数据,如今却必须通过中间层来完成。</li>
+<li>有时会导致级联的修改。这种修改尤其体现在自上而下的方向。如果在表示层中需要增加一个功能,为保证其设计符合分层式结构,可能需要在相应的业务逻辑层和数据访问层中都增加相应的代码。</li>
+<li>增加了开发成本。</li>
+<li>待更新……</li>
+</ul>
+
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
+    </div>
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/12/14/123/" class="archive-article-date">
-      <time datetime="2017-12-14T15:00:12.899Z" itemprop="datePublished">12-14</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/123/">欢迎大家来到我的博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
   </div>
+  
+    
+
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/12/14/1234/" class="archive-article-date">
-      <time datetime="2017-12-14T14:53:02.730Z" itemprop="datePublished">12-14</time>
-</a>
 
 
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
         </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/1234/">我擦</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"　| Snails　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
     
+
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/12/14/testpage/" class="archive-article-date">
-      <time datetime="2017-12-14T14:01:01.773Z" itemprop="datePublished">12-14</time>
-</a>
+</div>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/testpage/">试试这个博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/12/14/hello-world/" class="archive-article-date">
-      <time datetime="2017-12-14T08:37:17.533Z" itemprop="datePublished">12-14</time>
-</a>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/14/hello-world/">Hello World</a>
-    </h1>
-  
 
-        <div class="article-info info-on-archive">
-          
 
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
     
 
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
